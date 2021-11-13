@@ -10,9 +10,9 @@ public class RigSelector : MonoBehaviour
     private bool isOnXRDevice;
     
     private void Awake() {
-        isOnXRDevice = Application.platform == RuntimePlatform.Android;
-        XRRig.SetActive(isOnXRDevice);
-        NonVRRig.SetActive(!isOnXRDevice);
+        // isOnXRDevice = Application.platform == RuntimePlatform.Android;
+        XRRig.SetActive(true);
+        // NonVRRig.SetActive(!isOnXRDevice);
     }
 
 }
